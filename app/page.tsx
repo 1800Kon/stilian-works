@@ -11,11 +11,11 @@ export default function Home() {
     );
 
     return (
-        <div className="flex flex-col h-screen">
+        <div className="flex flex-col min-h-screen max-h-screen">
             <NavigationBar />
             <div className="h-full grid grid-cols-3 bg-cyan-500">
                 {/* Left side */}
-                <div className="text-center col-span-1 bg-yellow-100    ">
+                <div className="text-center col-span-1 bg-yellow-100">
                     <Listbox className="h-full">
                         <ListboxItem key="Verev" onMouseEnter={imageSwapper} onMouseLeave={imageDefault}><p className="text-4xl text-slate-800">Verev</p></ListboxItem>
                         <ListboxItem key="Indignus" onMouseEnter={imageSwapper} onMouseLeave={imageDefault}><p className="text-4xl text-slate-800">Indignus</p></ListboxItem>
@@ -24,12 +24,11 @@ export default function Home() {
                     </Listbox>
                 </div>
                 {/* Right side */}
-                <div className="flex justify-center items-center col-span-2">
-
+                <div className="flex justify-center col-span-2">
                     <Image
+                        className=""
                         alt="NextUI hero Image"
                         src={src}
-
                     />
 
                 </div>

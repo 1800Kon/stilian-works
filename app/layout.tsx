@@ -18,12 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className='light'>
-      <body className={`${inter.className} bg-orange-50 h-screen`}>
+      <body className={`${inter.className} min-h-screen bg-red-300`}>
         <Providers>
-          <div className=''>
-            <NavigationBar />
-            {children}
-          </div>
+          <NavigationBar />
+          {children}
         </Providers>
       </body>
     </html>
